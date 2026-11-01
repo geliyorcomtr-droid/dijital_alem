@@ -403,29 +403,22 @@ img {
   max-width: 64px;
 }
 
-/* Nearby services — stay inside page 16px gutters (361px content) */
+/* Nearby services — exactly 3 cards, all visible in 361px content */
 .service-scroller {
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
   width: 100%;
   max-width: var(--content);
   margin: 0;
   padding: 0 0 4px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-
-.service-scroller::-webkit-scrollbar {
-  display: none;
+  overflow: visible;
 }
 
 .service-card {
-  flex: 0 0 168px;
-  scroll-snap-align: start;
+  min-width: 0;
   background: #fff;
-  border-radius: 18px;
+  border-radius: 14px;
   overflow: hidden;
   box-shadow: var(--shadow-card);
   display: flex;
@@ -434,7 +427,7 @@ img {
 
 .service-media {
   position: relative;
-  height: 112px;
+  height: 92px;
   background: #f3f6fb;
   overflow: hidden;
 }
@@ -448,20 +441,21 @@ img {
 
 .media-tags {
   position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
+  top: 6px;
+  left: 6px;
+  right: 6px;
   display: flex;
   justify-content: space-between;
-  gap: 6px;
+  gap: 4px;
 }
 
 .tag {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 800;
   border-radius: 999px;
-  padding: 4px 8px;
+  padding: 3px 5px;
   backdrop-filter: blur(8px);
+  white-space: nowrap;
 }
 
 .tag.dist {
@@ -475,13 +469,13 @@ img {
 }
 
 .service-body {
-  padding: 10px 12px 8px;
+  padding: 8px 8px 6px;
 }
 
 .service-body h3 {
-  margin: 0 0 4px;
+  margin: 0 0 3px;
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 800;
   color: var(--navy);
   white-space: nowrap;
@@ -491,7 +485,7 @@ img {
 
 .rating {
   margin: 0;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
   color: var(--navy);
 }
@@ -511,10 +505,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 34px;
-  font-size: 12px;
+  height: 30px;
+  padding: 0 4px;
+  font-size: 10px;
   font-weight: 800;
   color: #fff;
+  text-align: center;
+  line-height: 1.15;
 }
 
 .promo-blue { background: linear-gradient(90deg, #2563eb, #3b82f6); }
