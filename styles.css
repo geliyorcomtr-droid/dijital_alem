@@ -238,6 +238,12 @@ img {
   position: relative;
 }
 
+.banner-slide picture,
+.service-media picture,
+.brand picture {
+  display: contents;
+}
+
 .banner-slide img {
   width: 100%;
   height: 100%;
