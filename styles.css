@@ -356,11 +356,12 @@ img {
   font-weight: 800;
 }
 
-/* Categories */
+/* Categories — vertical tiles 66×110 (title art baked into images) */
 .cat-row {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(5, 66px);
+  justify-content: space-between;
+  gap: 0;
 }
 
 .cat-card {
@@ -368,39 +369,18 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 6px;
   min-width: 0;
+  width: 66px;
 }
 
-.cat-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 18px;
-  display: grid;
-  place-items: center;
+.cat-tile {
+  width: 66px;
+  height: 110px;
+  max-width: 66px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
   box-shadow: var(--shadow-card);
-  background: #fff;
-}
-
-.cat-health { background: linear-gradient(180deg, #ecfdf5, #d1fae5); }
-.cat-home { background: linear-gradient(180deg, #eff6ff, #dbeafe); }
-.cat-car { background: linear-gradient(180deg, #fff7ed, #ffedd5); }
-.cat-pet { background: linear-gradient(180deg, #faf5ff, #f3e8ff); }
-.cat-clean { background: linear-gradient(180deg, #f0fdfa, #ccfbf1); }
-
-.cat-card strong {
-  font-size: 11px;
-  font-weight: 800;
-  color: var(--navy);
-  line-height: 1.15;
-}
-
-.cat-card span:last-child {
-  font-size: 9px;
-  font-weight: 700;
-  color: var(--muted);
-  line-height: 1.2;
-  max-width: 64px;
 }
 
 /* Nearby services — exactly 3 cards, all visible in 361px content */
