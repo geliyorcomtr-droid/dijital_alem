@@ -544,6 +544,29 @@ img {
   box-shadow: var(--shadow-card);
 }
 
+/* Promo banner — full-width 361×121 under İlanlar; gutters via .page */
+.promo-banner-link {
+  display: block;
+  width: 100%;
+  max-width: var(--content);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #fff;
+}
+
+.promo-banner-link picture {
+  display: contents;
+}
+
+.promo-banner-link img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 361 / 121;
+  object-fit: cover;
+  display: block;
+}
+
 .service-card {
   min-width: 0;
   background: #fff;
