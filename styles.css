@@ -401,6 +401,36 @@ img {
   overflow: visible;
 }
 
+/* Nearby event tiles — vertical 76×124 (title art baked into images) */
+.nearby-tile-row {
+  display: grid;
+  grid-template-columns: repeat(4, 76px);
+  justify-content: space-between;
+  gap: 0;
+  margin-top: 14px;
+  width: 100%;
+  max-width: var(--content);
+}
+
+.nearby-tile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 0;
+  width: 76px;
+}
+
+.nearby-tile {
+  width: 76px;
+  height: 124px;
+  max-width: 76px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  box-shadow: var(--shadow-card);
+}
+
 .service-card {
   min-width: 0;
   background: #fff;
