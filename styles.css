@@ -544,7 +544,7 @@ img {
   box-shadow: var(--shadow-card);
 }
 
-/* Promo banner — full-width 361×121 under İlanlar; gutters via .page */
+/* Promo banner — full-width 361×82 above Acil Destek; gutters via .page */
 .promo-banner-link {
   display: block;
   width: 100%;
@@ -562,7 +562,7 @@ img {
 .promo-banner-link img {
   width: 100%;
   height: auto;
-  aspect-ratio: 361 / 121;
+  aspect-ratio: 361 / 82;
   object-fit: cover;
   display: block;
 }
