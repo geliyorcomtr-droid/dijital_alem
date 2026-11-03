@@ -515,6 +515,35 @@ img {
   box-shadow: var(--shadow-card);
 }
 
+/* İlanlar — 4 equal tiles in 361px: (361 - 3*8) / 4 = 84.25px; gutters via .page */
+.ilanlar-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  max-width: var(--content);
+}
+
+.ilanlar-tile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  min-width: 0;
+  width: 100%;
+}
+
+.ilanlar-tile {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 84 / 134;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  box-shadow: var(--shadow-card);
+}
+
 .service-card {
   min-width: 0;
   background: #fff;
