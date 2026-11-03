@@ -432,6 +432,37 @@ img {
   box-shadow: var(--shadow-card);
 }
 
+/* Fırsat — 2 equal banners in 361px: (361 - 8) / 2 = 176.5px */
+.firsat-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  max-width: var(--content);
+}
+
+.firsat-banner {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #fff;
+}
+
+.firsat-banner picture {
+  display: contents;
+}
+
+.firsat-banner img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1836 / 856;
+  object-fit: cover;
+  display: block;
+}
+
 .service-card {
   min-width: 0;
   background: #fff;
