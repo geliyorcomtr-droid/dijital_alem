@@ -463,6 +463,29 @@ img {
   display: block;
 }
 
+/* Duyuru & Haber — full-width 361×82 under Fırsat; gutters via .page */
+.duyuru-haber-banner {
+  display: block;
+  width: 100%;
+  max-width: var(--content);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #fff;
+}
+
+.duyuru-haber-banner picture {
+  display: contents;
+}
+
+.duyuru-haber-banner img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 361 / 82;
+  object-fit: cover;
+  display: block;
+}
+
 .service-card {
   min-width: 0;
   background: #fff;
