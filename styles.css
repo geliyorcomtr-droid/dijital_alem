@@ -362,27 +362,29 @@ img {
   font-weight: 800;
 }
 
-/* Categories — vertical tiles 66×110 (title art baked into images) */
+/* Categories — 5 equal tiles in 361px content: (361 - 4*8) / 5 ≈ 65.8px */
 .cat-row {
   display: grid;
-  grid-template-columns: repeat(5, 66px);
-  justify-content: start;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
+  width: 100%;
+  max-width: var(--content);
 }
 
 .cat-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
   min-width: 0;
-  width: 66px;
+  width: 100%;
 }
 
 .cat-tile {
-  width: 66px;
-  height: 110px;
-  max-width: 66px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 66 / 110;
+  max-width: none;
   object-fit: cover;
   border-radius: 14px;
   display: block;
@@ -401,11 +403,10 @@ img {
   overflow: visible;
 }
 
-/* Event tiles — vertical 76×124 (title art baked into images) */
+/* Event tiles — 4 equal in 361px: (361 - 3*8) / 4 = 84.25px; height ~124 or proportional */
 .nearby-tile-row {
   display: grid;
-  grid-template-columns: repeat(4, 76px);
-  justify-content: start;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   width: 100%;
   max-width: var(--content);
@@ -414,16 +415,17 @@ img {
 .nearby-tile-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
   min-width: 0;
-  width: 76px;
+  width: 100%;
 }
 
 .nearby-tile {
-  width: 76px;
-  height: 124px;
-  max-width: 76px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 76 / 124;
+  max-width: none;
   object-fit: cover;
   border-radius: 14px;
   display: block;
