@@ -486,6 +486,35 @@ img {
   display: block;
 }
 
+/* Keşfet — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
+.kesfet-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  max-width: var(--content);
+}
+
+.kesfet-tile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  min-width: 0;
+  width: 100%;
+}
+
+.kesfet-tile {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 115 / 140;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  box-shadow: var(--shadow-card);
+}
+
 .service-card {
   min-width: 0;
   background: #fff;
