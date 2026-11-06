@@ -1,5 +1,6 @@
 (() => {
   const track = document.getElementById("bannerTrack");
+  const frame = document.getElementById("bannerFrame");
   const dots = [...document.querySelectorAll("#bannerDots .dot")];
   if (!track || !dots.length) return;
 
@@ -13,6 +14,10 @@
     dots.forEach((dot, i) => {
       dot.classList.toggle("is-active", i === index);
     });
+    const slideFrame = slides[index]?.getAttribute("data-frame");
+    if (frame && slideFrame) {
+      frame.style.setProperty("--frame", slideFrame);
+    }
   };
 
   const restart = () => {

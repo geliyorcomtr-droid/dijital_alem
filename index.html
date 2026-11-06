@@ -59,15 +59,15 @@
 
       <!-- Hero banner carousel -->
       <section class="banner-section" aria-label="Öne çıkan öneriler">
-        <div class="banner-frame">
+        <div class="banner-frame" id="bannerFrame" style="--frame:#d8eafd">
           <div class="banner-track" id="bannerTrack">
-            <article class="banner-slide is-active">
+            <article class="banner-slide is-active" data-frame="#d8eafd">
               <picture>
                 <source type="image/webp" srcset="assets/10-banner.webp" />
                 <img src="assets/10-banner.jpg" alt="Size en yakın açık diş klinikleri bulduk!" width="722" height="290" />
               </picture>
             </article>
-            <article class="banner-slide">
+            <article class="banner-slide" data-frame="#fc7704">
               <picture>
                 <source
                   type="image/webp"
@@ -77,7 +77,7 @@
                 <img src="assets/banner-cilingir.jpg" alt="Çilingir" width="722" height="304" />
               </picture>
             </article>
-            <article class="banner-slide">
+            <article class="banner-slide" data-frame="#fdead5">
               <picture>
                 <source
                   type="image/webp"
@@ -87,7 +87,7 @@
                 <img src="assets/banner-temizlik.jpg" alt="Temizlik" width="722" height="304" />
               </picture>
             </article>
-            <article class="banner-slide">
+            <article class="banner-slide" data-frame="#d8d8fc">
               <picture>
                 <source
                   type="image/webp"
@@ -114,31 +114,31 @@
           <a href="#kategoriler" class="link-more">Tüm Kategoriler ></a>
         </div>
         <div class="cat-row" id="kategoriler">
-          <a class="cat-card" href="#saglik" aria-label="Sağlık">
+          <a class="cat-card" href="#saglik" aria-label="Sağlık" style="--frame:#b8e7fd">
             <picture>
               <source type="image/webp" srcset="assets/hizli-erisim/saglik.webp" />
               <img class="cat-tile" src="assets/hizli-erisim/saglik.jpg" alt="Sağlık" width="66" height="110" />
             </picture>
           </a>
-          <a class="cat-card" href="#ev" aria-label="Ev & Yaşam">
+          <a class="cat-card" href="#ev" aria-label="Ev & Yaşam" style="--frame:#d8b7fb">
             <picture>
               <source type="image/webp" srcset="assets/hizli-erisim/ev-yasam.webp" />
               <img class="cat-tile" src="assets/hizli-erisim/ev-yasam.jpg" alt="Ev & Yaşam" width="66" height="110" />
             </picture>
           </a>
-          <a class="cat-card" href="#arac" aria-label="Araç">
+          <a class="cat-card" href="#arac" aria-label="Araç" style="--frame:#77ebb7">
             <picture>
               <source type="image/webp" srcset="assets/hizli-erisim/arac.webp" />
               <img class="cat-tile" src="assets/hizli-erisim/arac.jpg" alt="Araç" width="66" height="110" />
             </picture>
           </a>
-          <a class="cat-card" href="#cilingir" aria-label="Çilingir">
+          <a class="cat-card" href="#cilingir" aria-label="Çilingir" style="--frame:#78d3fd">
             <picture>
               <source type="image/webp" srcset="assets/hizli-erisim/cilingir.webp" />
               <img class="cat-tile" src="assets/hizli-erisim/cilingir.jpg" alt="Çilingir" width="66" height="110" />
             </picture>
           </a>
-          <a class="cat-card" href="#temizlik" aria-label="Temizlik">
+          <a class="cat-card" href="#temizlik" aria-label="Temizlik" style="--frame:#fde4b7">
             <picture>
               <source type="image/webp" srcset="assets/hizli-erisim/temizlik.webp" />
               <img class="cat-tile" src="assets/hizli-erisim/temizlik.jpg" alt="Temizlik" width="66" height="110" />
@@ -154,7 +154,7 @@
           <a href="#tumunu" class="link-more">Tümünü Gör ></a>
         </div>
         <div class="service-scroller" id="tumunu">
-          <article class="service-card">
+          <article class="service-card" style="--frame:#d6eafd">
             <div class="service-media">
               <picture>
                 <source type="image/webp" srcset="assets/09-dis-koltugu.webp" />
@@ -172,7 +172,7 @@
             <a class="promo promo-blue" href="#nova">%20 İndirim ></a>
           </article>
 
-          <article class="service-card">
+          <article class="service-card" style="--frame:#f80605">
             <div class="service-media">
               <picture>
                 <source type="image/webp" srcset="assets/08-eczane.webp" />
@@ -190,7 +190,7 @@
             <a class="promo promo-green" href="#eczane">Nöbetçi ></a>
           </article>
 
-          <article class="service-card">
+          <article class="service-card" style="--frame:#0488f7">
             <div class="service-media">
               <picture>
                 <source type="image/webp" srcset="assets/07-tesisatci.webp" />
@@ -217,7 +217,7 @@
           <a href="#etkinlikler" class="link-more">Tümünü Gör ></a>
         </div>
         <div class="nearby-tile-row" id="etkinlikler" aria-label="Etkinlikler">
-          <a class="nearby-tile-card" href="#tiyatro" aria-label="Tiyatro">
+          <a class="nearby-tile-card" href="#tiyatro" aria-label="Tiyatro" style="--frame:#68d5fb">
             <picture>
               <source
                 type="image/webp"
@@ -226,7 +226,7 @@
               <img class="nearby-tile" src="assets/yakin-hizmetler/tiyatro.jpg" alt="Tiyatro" width="76" height="124" />
             </picture>
           </a>
-          <a class="nearby-tile-card" href="#konser" aria-label="Konser">
+          <a class="nearby-tile-card" href="#konser" aria-label="Konser" style="--frame:#e6c8fc">
             <picture>
               <source
                 type="image/webp"
@@ -235,7 +235,7 @@
               <img class="nearby-tile" src="assets/yakin-hizmetler/konser.jpg" alt="Konser" width="76" height="124" />
             </picture>
           </a>
-          <a class="nearby-tile-card" href="#cocuk-etkinligi" aria-label="Çocuk Etkinliği">
+          <a class="nearby-tile-card" href="#cocuk-etkinligi" aria-label="Çocuk Etkinliği" style="--frame:#fb6903">
             <picture>
               <source
                 type="image/webp"
@@ -244,7 +244,7 @@
               <img class="nearby-tile" src="assets/yakin-hizmetler/cocuk-etkinligi.jpg" alt="Çocuk Etkinliği" width="76" height="124" />
             </picture>
           </a>
-          <a class="nearby-tile-card" href="#festival" aria-label="Festival">
+          <a class="nearby-tile-card" href="#festival" aria-label="Festival" style="--frame:#76d9fc">
             <picture>
               <source
                 type="image/webp"
@@ -263,7 +263,7 @@
           <a href="#firsat" class="link-more">Tümünü Gör ></a>
         </div>
         <div class="firsat-row" id="firsat" aria-label="Fırsat">
-          <a class="firsat-banner" href="#firsat-1" aria-label="Fırsat 1">
+          <a class="firsat-banner" href="#firsat-1" aria-label="Fırsat 1" style="--frame:#fa5703">
             <picture>
               <source
                 type="image/webp"
@@ -272,7 +272,7 @@
               <img src="assets/firsat/banner-1.jpg" alt="dijital alem — Şehrin Dijital Anahtarı" width="177" height="82" />
             </picture>
           </a>
-          <a class="firsat-banner" href="#firsat-2" aria-label="Fırsat 2">
+          <a class="firsat-banner" href="#firsat-2" aria-label="Fırsat 2" style="--frame:#0364d9">
             <picture>
               <source
                 type="image/webp"
@@ -290,7 +290,7 @@
           <h2>Kurum Duyuruları</h2>
           <a href="#duyuru-haber" class="link-more">Tümünü Gör ></a>
         </div>
-        <a class="duyuru-haber-banner" href="#duyuru-haber" id="duyuru-haber">
+        <a class="duyuru-haber-banner" href="#duyuru-haber" id="duyuru-haber" style="--frame:#fd9b16">
           <picture>
             <source
               type="image/webp"
@@ -313,7 +313,7 @@
           <a href="#kesfet" class="link-more">Tümünü Gör ></a>
         </div>
         <div class="kesfet-row" id="kesfet" aria-label="Keşfet">
-          <a class="kesfet-tile-card" href="#gezilecek-yerler" aria-label="Gezilecek Yerler">
+          <a class="kesfet-tile-card" href="#gezilecek-yerler" aria-label="Gezilecek Yerler" style="--frame:#b6ebfd">
             <picture>
               <source
                 type="image/webp"
@@ -322,7 +322,7 @@
               <img class="kesfet-tile" src="assets/kesfet/gezilecek-yerler.jpg" alt="Gezilecek Yerler" width="115" height="140" />
             </picture>
           </a>
-          <a class="kesfet-tile-card" href="#cafe-restaurant" aria-label="Cafe & Restaurant">
+          <a class="kesfet-tile-card" href="#cafe-restaurant" aria-label="Cafe & Restaurant" style="--frame:#b5ebfc">
             <picture>
               <source
                 type="image/webp"
@@ -331,7 +331,7 @@
               <img class="kesfet-tile" src="assets/kesfet/cafe-restaurant.jpg" alt="Cafe & Restaurant" width="115" height="140" />
             </picture>
           </a>
-          <a class="kesfet-tile-card" href="#parklar" aria-label="Parklar">
+          <a class="kesfet-tile-card" href="#parklar" aria-label="Parklar" style="--frame:#a8eafc">
             <picture>
               <source
                 type="image/webp"
@@ -350,7 +350,7 @@
           <a href="#ilanlar" class="link-more">Tümünü Gör ></a>
         </div>
         <div class="ilanlar-row" id="ilanlar" aria-label="İlanlar">
-          <a class="ilanlar-tile-card" href="#is-ilanlari" aria-label="İş İlanları">
+          <a class="ilanlar-tile-card" href="#is-ilanlari" aria-label="İş İlanları" style="--frame:#a8e8fc">
             <picture>
               <source
                 type="image/webp"
@@ -359,7 +359,7 @@
               <img class="ilanlar-tile" src="assets/ilanlar/is-ilanlari.jpg" alt="İş İlanları" width="84" height="134" />
             </picture>
           </a>
-          <a class="ilanlar-tile-card" href="#arac" aria-label="Araç">
+          <a class="ilanlar-tile-card" href="#arac" aria-label="Araç" style="--frame:#fb8706">
             <picture>
               <source
                 type="image/webp"
@@ -368,7 +368,7 @@
               <img class="ilanlar-tile" src="assets/ilanlar/arac.jpg" alt="Araç" width="84" height="134" />
             </picture>
           </a>
-          <a class="ilanlar-tile-card" href="#emlak" aria-label="Emlak">
+          <a class="ilanlar-tile-card" href="#emlak" aria-label="Emlak" style="--frame:#69a704">
             <picture>
               <source
                 type="image/webp"
@@ -377,7 +377,7 @@
               <img class="ilanlar-tile" src="assets/ilanlar/emlak.jpg" alt="Emlak" width="84" height="134" />
             </picture>
           </a>
-          <a class="ilanlar-tile-card" href="#ikinci-el" aria-label="İkinci El">
+          <a class="ilanlar-tile-card" href="#ikinci-el" aria-label="İkinci El" style="--frame:#98e5fb">
             <picture>
               <source
                 type="image/webp"
@@ -391,7 +391,7 @@
 
       <!-- Promo: Uygulama Çöplüğü (image-only, no section title) -->
       <section class="section promo-banner" aria-label="Uygulama Çöplüğü">
-        <a class="promo-banner-link" href="#uygulama-coplugu" id="uygulama-coplugu">
+        <a class="promo-banner-link" href="#uygulama-coplugu" id="uygulama-coplugu" style="--frame:#d80404">
           <picture>
             <source
               type="image/webp"
@@ -414,7 +414,7 @@
           <a href="#acil-destek" class="link-more">Tümünü Gör ></a>
         </div>
         <div class="acil-destek-row" id="acil-destek" aria-label="Acil Destek">
-          <a class="acil-destek-tile-card" href="#112" aria-label="112">
+          <a class="acil-destek-tile-card" href="#112" aria-label="112" style="--frame:#fc9699">
             <picture>
               <source
                 type="image/webp"
@@ -423,7 +423,7 @@
               <img class="acil-destek-tile" src="assets/acil-destek/112.jpg" alt="112" width="115" height="152" />
             </picture>
           </a>
-          <a class="acil-destek-tile-card" href="#nobetci-eczane" aria-label="Nöbetçi Eczane">
+          <a class="acil-destek-tile-card" href="#nobetci-eczane" aria-label="Nöbetçi Eczane" style="--frame:#fb3539">
             <picture>
               <source
                 type="image/webp"
@@ -432,7 +432,7 @@
               <img class="acil-destek-tile" src="assets/acil-destek/nobetci-eczane.jpg" alt="Nöbetçi Eczane" width="115" height="152" />
             </picture>
           </a>
-          <a class="acil-destek-tile-card" href="#acil-hizmetler" aria-label="Acil Hizmetler">
+          <a class="acil-destek-tile-card" href="#acil-hizmetler" aria-label="Acil Hizmetler" style="--frame:#fcc7c8">
             <picture>
               <source
                 type="image/webp"

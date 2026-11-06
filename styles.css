@@ -208,6 +208,22 @@ img {
   white-space: nowrap;
 }
 
+/* Image boxes — dominant-color frame + 2px gap before image */
+.banner-frame,
+.cat-card,
+.service-card,
+.nearby-tile-card,
+.firsat-banner,
+.duyuru-haber-banner,
+.kesfet-tile-card,
+.ilanlar-tile-card,
+.promo-banner-link,
+.acil-destek-tile-card {
+  border: 2px solid var(--frame, #c9d2e3);
+  padding: 2px;
+  background: #fff;
+}
+
 /* Banner */
 .banner-section {
   margin-bottom: 18px;
@@ -219,8 +235,8 @@ img {
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
-  background: #e8f2ff;
   box-shadow: var(--shadow-soft);
+  transition: border-color 0.35s ease;
 }
 
 .banner-track {
@@ -250,6 +266,7 @@ img {
   object-fit: contain;
   object-position: center;
   background: #eaf3ff;
+  border-radius: calc(var(--radius-lg) - 4px);
 }
 
 .banner-fallback {
@@ -378,6 +395,9 @@ img {
   text-align: center;
   min-width: 0;
   width: 100%;
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
 }
 
 .cat-tile {
@@ -386,9 +406,8 @@ img {
   aspect-ratio: 66 / 110;
   max-width: none;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 10px;
   display: block;
-  box-shadow: var(--shadow-card);
 }
 
 /* Nearby services — exactly 3 cards, all visible in 361px content */
@@ -419,6 +438,9 @@ img {
   text-align: center;
   min-width: 0;
   width: 100%;
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
 }
 
 .nearby-tile {
@@ -427,9 +449,8 @@ img {
   aspect-ratio: 76 / 124;
   max-width: none;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 10px;
   display: block;
-  box-shadow: var(--shadow-card);
 }
 
 /* Fırsat — 2 equal banners in 361px: (361 - 8) / 2 = 176.5px */
@@ -448,7 +469,6 @@ img {
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-card);
-  background: #fff;
 }
 
 .firsat-banner picture {
@@ -461,6 +481,7 @@ img {
   aspect-ratio: 1836 / 856;
   object-fit: cover;
   display: block;
+  border-radius: calc(var(--radius-md) - 4px);
 }
 
 /* Kurum Duyuruları / Duyuru & Haber — full-width 361×82 under Fırsat; gutters via .page */
@@ -471,7 +492,6 @@ img {
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-card);
-  background: #fff;
 }
 
 .duyuru-haber-banner picture {
@@ -484,6 +504,7 @@ img {
   aspect-ratio: 361 / 82;
   object-fit: cover;
   display: block;
+  border-radius: calc(var(--radius-md) - 4px);
 }
 
 /* Keşfet — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
@@ -502,6 +523,9 @@ img {
   text-align: center;
   min-width: 0;
   width: 100%;
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
 }
 
 .kesfet-tile {
@@ -510,9 +534,8 @@ img {
   aspect-ratio: 115 / 140;
   max-width: none;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 10px;
   display: block;
-  box-shadow: var(--shadow-card);
 }
 
 /* İlanlar — 4 equal tiles in 361px: (361 - 3*8) / 4 = 84.25px; gutters via .page */
@@ -531,6 +554,9 @@ img {
   text-align: center;
   min-width: 0;
   width: 100%;
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
 }
 
 .ilanlar-tile {
@@ -539,9 +565,8 @@ img {
   aspect-ratio: 84 / 134;
   max-width: none;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 10px;
   display: block;
-  box-shadow: var(--shadow-card);
 }
 
 /* Promo banner — full-width 361×82 above Acil Destek; gutters via .page */
@@ -552,7 +577,6 @@ img {
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-card);
-  background: #fff;
 }
 
 .promo-banner-link picture {
@@ -565,6 +589,7 @@ img {
   aspect-ratio: 361 / 82;
   object-fit: cover;
   display: block;
+  border-radius: calc(var(--radius-md) - 4px);
 }
 
 /* Acil Destek — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
@@ -583,6 +608,9 @@ img {
   text-align: center;
   min-width: 0;
   width: 100%;
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
 }
 
 .acil-destek-tile {
@@ -591,14 +619,12 @@ img {
   aspect-ratio: 115 / 152;
   max-width: none;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 10px;
   display: block;
-  box-shadow: var(--shadow-card);
 }
 
 .service-card {
   min-width: 0;
-  background: #fff;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: var(--shadow-card);
@@ -611,6 +637,11 @@ img {
   height: 92px;
   background: #f3f6fb;
   overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.service-card .promo {
+  border-radius: 0 0 10px 10px;
 }
 
 .service-media img {
