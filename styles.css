@@ -219,7 +219,7 @@ img {
 .ilanlar-tile-card,
 .promo-banner-link,
 .acil-destek-tile-card {
-  border: 2px solid var(--frame, #c9d2e3);
+  border: 1px solid var(--frame, #c9d2e3);
   padding: 2px;
   background: #fff;
 }
@@ -266,7 +266,7 @@ img {
   object-fit: contain;
   object-position: center;
   background: #eaf3ff;
-  border-radius: calc(var(--radius-lg) - 4px);
+  border-radius: calc(var(--radius-lg) - 3px);
 }
 
 .banner-fallback {
@@ -406,7 +406,7 @@ img {
   aspect-ratio: 66 / 110;
   max-width: none;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 11px;
   display: block;
 }
 
@@ -449,7 +449,7 @@ img {
   aspect-ratio: 76 / 124;
   max-width: none;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 11px;
   display: block;
 }
 
@@ -481,7 +481,7 @@ img {
   aspect-ratio: 1836 / 856;
   object-fit: cover;
   display: block;
-  border-radius: calc(var(--radius-md) - 4px);
+  border-radius: calc(var(--radius-md) - 3px);
 }
 
 /* Kurum Duyuruları / Duyuru & Haber — full-width 361×82 under Fırsat; gutters via .page */
@@ -504,7 +504,7 @@ img {
   aspect-ratio: 361 / 82;
   object-fit: cover;
   display: block;
-  border-radius: calc(var(--radius-md) - 4px);
+  border-radius: calc(var(--radius-md) - 3px);
 }
 
 /* Keşfet — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
@@ -534,7 +534,7 @@ img {
   aspect-ratio: 115 / 140;
   max-width: none;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 11px;
   display: block;
 }
 
@@ -565,7 +565,7 @@ img {
   aspect-ratio: 84 / 134;
   max-width: none;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 11px;
   display: block;
 }
 
@@ -589,7 +589,7 @@ img {
   aspect-ratio: 361 / 82;
   object-fit: cover;
   display: block;
-  border-radius: calc(var(--radius-md) - 4px);
+  border-radius: calc(var(--radius-md) - 3px);
 }
 
 /* Acil Destek — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
@@ -619,7 +619,7 @@ img {
   aspect-ratio: 115 / 152;
   max-width: none;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 11px;
   display: block;
 }
 
@@ -637,11 +637,11 @@ img {
   height: 92px;
   background: #f3f6fb;
   overflow: hidden;
-  border-radius: 10px 10px 0 0;
+  border-radius: 11px 11px 0 0;
 }
 
 .service-card .promo {
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 11px 11px;
 }
 
 .service-media img {
