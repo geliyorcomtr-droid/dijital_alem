@@ -231,8 +231,8 @@ img {
 }
 
 .banner-frame {
-  width: var(--content);
-  height: 152px;
+  width: var(--content); /* 361px */
+  height: 132px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
@@ -264,7 +264,7 @@ img {
 .banner-slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   background: #eaf3ff;
   border-radius: calc(var(--radius-lg) - 3px);
