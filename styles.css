@@ -379,7 +379,7 @@ img {
   font-weight: 800;
 }
 
-/* Categories — 5 equal tiles in 361px content: (361 - 4*8) / 5 ≈ 65.8px */
+/* Hizmetler — 5 equal tiles in 361px content: (361 - 4*8) / 5 ≈ 65.8px; asset 76×100 */
 .cat-row {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -403,7 +403,7 @@ img {
 .cat-tile {
   width: 100%;
   height: auto;
-  aspect-ratio: 66 / 110;
+  aspect-ratio: 76 / 100;
   max-width: none;
   object-fit: cover;
   border-radius: 11px;
