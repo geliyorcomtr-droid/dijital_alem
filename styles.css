@@ -144,14 +144,14 @@ img {
 
 .search-bar {
   width: var(--content);
-  height: 48px;
+  height: 42px; /* was 48 — ~12.5% smaller */
   background: #fff;
   border: 1.5px solid var(--line);
   border-radius: 999px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 0 8px 0 14px;
+  gap: 7px;
+  padding: 0 7px 0 12px;
   box-shadow: 0 4px 14px rgba(10, 31, 77, 0.04);
 }
 
@@ -181,8 +181,8 @@ img {
   border: none;
   background: transparent;
   color: var(--navy);
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -191,8 +191,8 @@ img {
 }
 
 .ai-btn {
-  height: 32px;
-  padding: 0 10px;
+  height: 28px;
+  padding: 0 9px;
   border: none;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
