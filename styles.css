@@ -234,9 +234,21 @@ img {
   width: var(--content); /* 361px */
   height: 132px;
   border-radius: var(--radius-lg);
+  /* Clip outer chrome only — track must not paint into the 2px white gap */
   overflow: hidden;
   position: relative;
   box-shadow: var(--shadow-soft);
+}
+
+/* Inner clip: keeps carousel transforms inside the padded content box */
+.banner-viewport {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: calc(var(--radius-lg) - 3px); /* 1px border + 2px pad */
+  background: #fff;
+  position: relative;
+  isolation: isolate;
 }
 
 .banner-track {
@@ -245,6 +257,7 @@ img {
   height: 100%;
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
+  backface-visibility: hidden;
 }
 
 .banner-slide {
@@ -252,6 +265,9 @@ img {
   width: 100%;
   height: 100%;
   position: relative;
+  flex-shrink: 0;
+  background: #fff;
+  overflow: hidden;
 }
 
 .banner-slide picture,
@@ -265,8 +281,9 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  background: #eaf3ff;
-  border-radius: calc(var(--radius-lg) - 3px);
+  background: #fff;
+  border-radius: 0; /* radius owned by .banner-viewport clip */
+  display: block;
 }
 
 .banner-fallback {

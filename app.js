@@ -9,7 +9,7 @@
 
   const goTo = (next) => {
     index = (next + slides.length) % slides.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
+    track.style.transform = `translate3d(-${index * 100}%, 0, 0)`;
     dots.forEach((dot, i) => {
       dot.classList.toggle("is-active", i === index);
     });
