@@ -439,7 +439,7 @@ img {
   overflow: visible;
 }
 
-/* Event tiles — 4 equal in 361px: (361 - 3*8) / 4 = 84.25px; height ~124 or proportional */
+/* Event tiles — 4 equal in 361px: (361 - 3*8) / 4 = 84.25px ≈ 85; asset 85×110 */
 .nearby-tile-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -463,7 +463,7 @@ img {
 .nearby-tile {
   width: 100%;
   height: auto;
-  aspect-ratio: 76 / 124;
+  aspect-ratio: 85 / 110;
   max-width: none;
   object-fit: cover;
   border-radius: 11px;
