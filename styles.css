@@ -428,11 +428,13 @@ img {
   display: block;
 }
 
-/* Nearby services — exactly 3 cards, all visible in 361px content */
+/* Nearby services — 3 cards ~12% smaller; gutters 16 / gaps 8 unchanged */
 .service-scroller {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* was full-bleed 3×1fr (~115px); 115×0.88 ≈ 101px */
+  grid-template-columns: repeat(3, 101px);
   gap: 8px;
+  justify-content: start;
   width: 100%;
   max-width: var(--content);
   margin: 0;
@@ -666,7 +668,8 @@ img {
 
 .service-card {
   min-width: 0;
-  border-radius: 14px;
+  width: 100%;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-card);
   display: flex;
@@ -675,14 +678,14 @@ img {
 
 .service-media {
   position: relative;
-  height: 92px;
+  height: 81px; /* was 92 — ~12% smaller */
   background: #f3f6fb;
   overflow: hidden;
-  border-radius: 11px 11px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .service-card .promo {
-  border-radius: 0 0 11px 11px;
+  border-radius: 0 0 10px 10px;
 }
 
 .service-media img {
@@ -694,19 +697,19 @@ img {
 
 .media-tags {
   position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
   display: flex;
   justify-content: space-between;
   gap: 4px;
 }
 
 .tag {
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 800;
   border-radius: 999px;
-  padding: 3px 5px;
+  padding: 2px 4px;
   backdrop-filter: blur(8px);
   white-space: nowrap;
 }
@@ -722,13 +725,13 @@ img {
 }
 
 .service-body {
-  padding: 8px 8px 6px;
+  padding: 7px 7px 5px;
 }
 
 .service-body h3 {
-  margin: 0 0 3px;
+  margin: 0 0 2px;
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
   color: var(--navy);
   white-space: nowrap;
@@ -738,7 +741,7 @@ img {
 
 .rating {
   margin: 0;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
   color: var(--navy);
 }
@@ -758,9 +761,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height: 26px; /* was 30 — ~13% smaller */
   padding: 0 4px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 800;
   color: #fff;
   text-align: center;
