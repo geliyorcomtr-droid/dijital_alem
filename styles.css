@@ -14,7 +14,7 @@
   --green-soft: #dcfce7;
   --phone-w: 393px;
   --gutter: 16px;
-  --section-gap: 7px; /* equal space above & below section titles */
+  --section-gap: 7px; /* equal vertical gap between sections / boxes / titles */
   --content: 361px;
   --radius-lg: 18px;
   --radius-md: 14px;
@@ -95,7 +95,7 @@ img {
   grid-template-columns: 40px 1fr 40px;
   align-items: center;
   gap: 8px;
-  margin-bottom: 14px;
+  margin-bottom: var(--section-gap);
 }
 
 .icon-btn {
@@ -139,7 +139,7 @@ img {
 
 /* Search */
 .search-wrap {
-  margin-bottom: 14px;
+  margin-bottom: var(--section-gap);
 }
 
 .search-bar {
@@ -350,7 +350,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 6px;
-  margin-top: 10px;
+  margin-top: var(--section-gap);
 }
 
 .dot {
