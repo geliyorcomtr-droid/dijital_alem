@@ -629,8 +629,7 @@ img {
   width: 100%;
   height: auto;
   aspect-ratio: 361 / 82;
-  object-fit: contain; /* full image visible — no crop */
-  background: #fff;
+  object-fit: cover; /* same fill as .yeme-icme-banner */
   display: block;
   border-radius: calc(var(--radius-md) - 3px);
 }
