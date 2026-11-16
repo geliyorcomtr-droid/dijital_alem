@@ -216,7 +216,7 @@ img {
 .nearby-tile-card,
 .firsat-banner,
 .sehrimden-haberler-banner,
-.duyuru-haber-banner,
+.yeme-icme-banner,
 .kesfet-tile-card,
 .ilanlar-tile-card,
 .promo-banner-link,
@@ -525,8 +525,8 @@ img {
   border-radius: calc(var(--radius-md) - 3px);
 }
 
-/* Kurum Duyuruları / Duyuru & Haber — full-width 361×82 under Fırsat; gutters via .page */
-.duyuru-haber-banner {
+/* Yeme & İçme — full-width 361×82; gutters via .page */
+.yeme-icme-banner {
   display: block;
   width: 100%;
   max-width: var(--content);
@@ -535,11 +535,11 @@ img {
   box-shadow: var(--shadow-card);
 }
 
-.duyuru-haber-banner picture {
+.yeme-icme-banner picture {
   display: contents;
 }
 
-.duyuru-haber-banner img {
+.yeme-icme-banner img {
   width: 100%;
   height: auto;
   aspect-ratio: 361 / 82;
