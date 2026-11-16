@@ -215,6 +215,7 @@ img {
 .service-card,
 .nearby-tile-card,
 .firsat-banner,
+.sehrimden-haberler-banner,
 .duyuru-haber-banner,
 .kesfet-tile-card,
 .ilanlar-tile-card,
@@ -468,6 +469,29 @@ img {
   object-fit: cover;
   border-radius: 11px;
   display: block;
+}
+
+/* Şehrimden Haberler — full-width 361×82 between Hizmetler and Fırsat; gutters via .page */
+.sehrimden-haberler-banner {
+  display: block;
+  width: 100%;
+  max-width: var(--content);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.sehrimden-haberler-banner picture {
+  display: contents;
+}
+
+.sehrimden-haberler-banner img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 361 / 82;
+  object-fit: cover;
+  display: block;
+  border-radius: calc(var(--radius-md) - 3px);
 }
 
 /* Fırsat — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; asset 115×82 */
