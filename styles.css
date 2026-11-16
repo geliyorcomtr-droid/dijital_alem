@@ -428,13 +428,11 @@ img {
   display: block;
 }
 
-/* Nearby services — 3 cards ~12% smaller; gutters 16 / gaps 8 unchanged */
+/* Nearby services — full content width (3 equal cols); height ~12% smaller */
 .service-scroller {
   display: grid;
-  /* was full-bleed 3×1fr (~115px); 115×0.88 ≈ 101px */
-  grid-template-columns: repeat(3, 101px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
-  justify-content: start;
   width: 100%;
   max-width: var(--content);
   margin: 0;
@@ -668,7 +666,6 @@ img {
 
 .service-card {
   min-width: 0;
-  width: 100%;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-card);
