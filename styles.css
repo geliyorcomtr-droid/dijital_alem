@@ -629,7 +629,8 @@ img {
   width: 100%;
   height: auto;
   aspect-ratio: 361 / 82;
-  object-fit: cover;
+  object-fit: contain; /* full image visible — no crop */
+  background: #fff;
   display: block;
   border-radius: calc(var(--radius-md) - 3px);
 }
