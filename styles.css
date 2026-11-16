@@ -470,10 +470,10 @@ img {
   display: block;
 }
 
-/* Fırsat — 2 equal banners in 361px: (361 - 8) / 2 = 176.5px */
+/* Fırsat — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; asset 115×82 */
 .firsat-row {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
   width: 100%;
   max-width: var(--content);
@@ -495,7 +495,7 @@ img {
 .firsat-banner img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1836 / 856;
+  aspect-ratio: 115 / 82;
   object-fit: cover;
   display: block;
   border-radius: calc(var(--radius-md) - 3px);
