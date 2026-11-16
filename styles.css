@@ -579,34 +579,35 @@ img {
   display: block;
 }
 
-/* İlanlar — 4 equal tiles in 361px: (361 - 3*8) / 4 = 84.25px; gutters via .page */
+/* İlanlar — 2 equal tiles in 361px: (361 - 8) / 2 = 176.5 ≈ 175; asset 175×82 */
 .ilanlar-row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
   width: 100%;
   max-width: var(--content);
 }
 
 .ilanlar-tile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  text-align: center;
+  display: block;
   min-width: 0;
   width: 100%;
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
   overflow: hidden;
+}
+
+.ilanlar-tile-card picture {
+  display: contents;
 }
 
 .ilanlar-tile {
   width: 100%;
   height: auto;
-  aspect-ratio: 84 / 134;
+  aspect-ratio: 175 / 82;
   max-width: none;
   object-fit: cover;
-  border-radius: 11px;
+  border-radius: calc(var(--radius-md) - 3px);
   display: block;
 }
 
