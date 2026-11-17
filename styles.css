@@ -534,22 +534,22 @@ img {
   border-radius: calc(var(--radius-md) - 3px);
 }
 
-/* Keşfet — 3 tiles exactly 132×120; gap 8px (navy frame via shared rule) */
+/* Keşfet — 3 tiles exactly 115×130; gap 8px (navy frame via shared rule) */
 .kesfet-row {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  width: calc(3 * 132px + 2 * 8px); /* 412 */
+  width: calc(3 * 115px + 2 * 8px); /* 345 */
   max-width: none;
-  margin-left: calc((100% - (3 * 132px + 2 * 8px)) / 2);
+  margin-left: calc((100% - (3 * 115px + 2 * 8px)) / 2);
 }
 
 .kesfet-tile-card {
   display: grid;
-  flex: 0 0 132px;
-  width: 132px;
-  height: 120px;
-  min-width: 132px;
+  flex: 0 0 115px;
+  width: 115px;
+  height: 130px;
+  min-width: 115px;
   border-radius: 14px;
   box-shadow: var(--shadow-card);
   overflow: hidden;
