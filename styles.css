@@ -599,7 +599,7 @@ img {
   display: block;
 }
 
-/* Acil Destek — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
+/* Acil Destek — 3 equal 115×82 tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
 .acil-destek-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -615,18 +615,22 @@ img {
   text-align: center;
   min-width: 0;
   width: 100%;
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
   overflow: hidden;
+}
+
+.acil-destek-tile-card picture {
+  display: contents;
 }
 
 .acil-destek-tile {
   width: 100%;
   height: auto;
-  aspect-ratio: 115 / 152;
+  aspect-ratio: 115 / 82;
   max-width: none;
   object-fit: cover;
-  border-radius: 11px;
+  border-radius: calc(var(--radius-md) - 3px);
   display: block;
 }
 

@@ -49,7 +49,7 @@ Config source of truth: `scripts/image-slots.mjs`.
 | `yeme-icme/yeme-icme` | Yeme & İçme | 361×82 | 722×164 | full-width banner |
 | `kesfet/*` | Keşfet | 115×130 | 230×260 | 3 tiles; height 130 |
 | `ilanlar/*` | İlanlar | 175×82 | 350×164 | 2 tiles; aspect 175/82 |
-| `acil-destek/*` | Acil Destek | 115×152 | 230×304 | 3 tiles; aspect 115/152 |
+| `acil-destek/*` | Acil Destek | 115×82 | 230×164 | 3 tiles; aspect 115/82 |
 | `sosyal-dayanisma/sosyal-dayanisma` | Sosyal & Dayanışma | 361×82 | 722×164 | full-width banner |
 | `11-logo` | Header brand | 288×96 | 576×192 | contain; PNG fallback |
 

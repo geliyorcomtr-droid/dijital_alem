@@ -48,10 +48,10 @@ export const SLOTS = {
   'ilanlar/ilanlar': { w: 175, h: 82, fit: 'cover' },
   'ilanlar/is-kariyer': { w: 175, h: 82, fit: 'cover' },
 
-  // Acil Destek — aspect 115/152
-  'acil-destek/112': { w: 115, h: 152, fit: 'cover' },
-  'acil-destek/nobetci-eczane': { w: 115, h: 152, fit: 'cover' },
-  'acil-destek/acil-hizmetler': { w: 115, h: 152, fit: 'cover' },
+  // Acil Destek — aspect 115/82 (same 3-up as Fırsat)
+  'acil-destek/112': { w: 115, h: 82, fit: 'cover' },
+  'acil-destek/nobetci-eczane': { w: 115, h: 82, fit: 'cover' },
+  'acil-destek/acil-hizmetler': { w: 115, h: 82, fit: 'cover' },
 
   // Brand logo — HTML 288×96 (CSS height 48, contain); no 2× upscale (single webp+png in HTML)
   '11-logo': { w: 288, h: 96, fit: 'contain', fallback: 'png', scale2x: false },
