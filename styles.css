@@ -218,7 +218,6 @@ img {
 .yeme-icme-banner,
 .kesfet-tile-card,
 .ilanlar-tile-card,
-.promo-banner-link,
 .acil-destek-tile-card,
 .sosyal-dayanisma-banner {
   border: 1px solid var(--navy); /* fixed brand navy — dijital alem text color */
@@ -598,29 +597,6 @@ img {
   object-fit: cover;
   border-radius: calc(var(--radius-md) - 3px);
   display: block;
-}
-
-/* Promo banner — full-width 361×82 above Acil Destek; gutters via .page */
-.promo-banner-link {
-  display: block;
-  width: 100%;
-  max-width: var(--content);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-}
-
-.promo-banner-link picture {
-  display: contents;
-}
-
-.promo-banner-link img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 361 / 82;
-  object-fit: cover; /* same fill as .yeme-icme-banner */
-  display: block;
-  border-radius: calc(var(--radius-md) - 3px);
 }
 
 /* Acil Destek — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
