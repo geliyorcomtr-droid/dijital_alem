@@ -71,3 +71,49 @@
 
   window.__bannerGoTo = goTo;
 })();
+
+(() => {
+  const el = document.querySelector(".header-temp");
+  if (!el) return;
+
+  const CACHE_KEY = "dijital_alem_aksaray_temp_c";
+  const LAT = 38.3686;
+  const LON = 34.037;
+  const URL =
+    `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}` +
+    `&current=temperature_2m&timezone=Europe%2FIstanbul`;
+
+  const apply = (celsius) => {
+    const rounded = Math.round(Number(celsius));
+    if (!Number.isFinite(rounded)) return;
+    el.textContent = `${rounded}°`;
+    el.setAttribute("aria-label", `Sıcaklık ${rounded} derece`);
+  };
+
+  try {
+    const cached = localStorage.getItem(CACHE_KEY);
+    if (cached != null) apply(cached);
+  } catch (_) {
+    /* ignore quota / private mode */
+  }
+
+  const fetchLive = async () => {
+    try {
+      const res = await fetch(URL, { cache: "no-store" });
+      if (!res.ok) return;
+      const data = await res.json();
+      const t = data?.current?.temperature_2m;
+      if (typeof t !== "number" || !Number.isFinite(t)) return;
+      apply(t);
+      try {
+        localStorage.setItem(CACHE_KEY, String(t));
+      } catch (_) {
+        /* ignore */
+      }
+    } catch (_) {
+      /* offline — keep last cached or static HTML value */
+    }
+  };
+
+  fetchLive();
+})();
