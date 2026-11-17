@@ -219,7 +219,8 @@ img {
 .kesfet-tile-card,
 .ilanlar-tile-card,
 .promo-banner-link,
-.acil-destek-tile-card {
+.acil-destek-tile-card,
+.sosyal-dayanisma-banner {
   border: 1px solid var(--navy); /* fixed brand navy — dijital alem text color */
   padding: 2px;
   background: #fff;
@@ -651,6 +652,29 @@ img {
   object-fit: cover;
   border-radius: 11px;
   display: block;
+}
+
+/* Sosyal & Dayanışma — full-width 361×82 under Acil Destek; gutters via .page */
+.sosyal-dayanisma-banner {
+  display: block;
+  width: 100%;
+  max-width: var(--content);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.sosyal-dayanisma-banner picture {
+  display: contents;
+}
+
+.sosyal-dayanisma-banner img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 361 / 82;
+  object-fit: cover;
+  display: block;
+  border-radius: calc(var(--radius-md) - 3px);
 }
 
 /* Stats */
