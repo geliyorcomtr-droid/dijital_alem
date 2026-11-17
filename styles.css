@@ -561,7 +561,8 @@ img {
   width: 100%;
   height: 100%;
   max-width: none;
-  object-fit: cover; /* same fill as .yeme-icme-banner */
+  object-fit: cover; /* fill 115×130; no letterbox */
+  object-position: center bottom; /* keep title/CTA; crop empty top */
   border-radius: 11px;
   display: block;
 }
