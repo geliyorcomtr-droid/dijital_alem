@@ -1,0 +1,7 @@
+﻿node_modules/
+
+# Full-res uploads — keep locally for re-export; never ship as runtime <img>
+assets/**/*-src.png
+assets/**/*-src.jpg
+assets/**/*-src.jpeg
+assets/**/*-src.webp

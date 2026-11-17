@@ -1,0 +1,19 @@
+{
+  "name": "dijital_alem",
+  "version": "1.0.0",
+  "description": "dijital alem Ana Sayfa static prototype",
+  "private": true,
+  "scripts": {
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "optimize:images:watch": "node scripts/optimize-images.mjs --watch",
+    "preview": "npx --yes serve . -l 5173"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geliyorcomtr-droid/dijital_alem.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}
