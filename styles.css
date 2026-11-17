@@ -89,7 +89,7 @@ img {
     linear-gradient(180deg, #ffffff 0%, #f7f9fc 180px, #f3f6fb 100%);
 }
 
-/* Header — logo true-centered; loc/temp share its vertical mid-line */
+/* Header — logo true-centered; loc/temp share its vertical mid-line; temp centered between logo and bell */
 .header {
   display: grid;
   grid-template-columns: 40px minmax(0, 1fr) auto minmax(0, 1fr) 40px;
@@ -170,7 +170,7 @@ img {
 .header-temp {
   display: inline-flex;
   align-items: center;
-  justify-self: start;
+  justify-self: center;
   align-self: center;
   height: 40px;
   color: var(--navy);
