@@ -31,8 +31,11 @@ export const SLOTS = {
 
   // Full-width banners — aspect 361/82
   'sehrimden/sehrimden-haberler': { w: 361, h: 82, fit: 'cover' },
-  'yeme-icme/yeme-icme': { w: 361, h: 82, fit: 'cover' },
   'sosyal-dayanisma/sosyal-dayanisma': { w: 361, h: 82, fit: 'cover' },
+
+  // Yeme & İçme — 2 tiles in 361px: (361 - 8) / 2 ≈ 176.5 ≈ 177; asset 177×82
+  'yeme-icme/konaklama': { w: 177, h: 82, fit: 'cover' },
+  'yeme-icme/yeme-icme': { w: 177, h: 82, fit: 'cover' },
 
   // Fırsat — aspect 115/82
   'firsat/geliyor-tr': { w: 115, h: 82, fit: 'cover' },

@@ -46,7 +46,8 @@ Config source of truth: `scripts/image-slots.mjs`.
 | `yakin-hizmetler/*` | Etkinlikler | 85×110 | 170×220 | 4 tiles; aspect 85/110 |
 | `sehrimden/sehrimden-haberler` | Şehrimden | 361×82 | 722×164 | full-width banner |
 | `firsat/*` | Fırsat | 115×82 | 230×164 | 3 tiles; aspect 115/82 |
-| `yeme-icme/yeme-icme` | Yeme & İçme | 361×82 | 722×164 | full-width banner |
+| `yeme-icme/konaklama` | Yeme & İçme | 177×82 | 354×164 | 2 tiles; 8px gap (177×2+8≈361) |
+| `yeme-icme/yeme-icme` | Yeme & İçme | 177×82 | 354×164 | 2 tiles with Konaklama |
 | `kesfet/*` | Keşfet | 115×130 | 230×260 | 3 tiles; height 130 |
 | `ilanlar/*` | İlanlar | 175×82 | 350×164 | 2 tiles; aspect 175/82 |
 | `sosyal-dayanisma/sosyal-dayanisma` | Sosyal & Dayanışma | 361×82 | 722×164 | full-width banner (above Acil Destek) |

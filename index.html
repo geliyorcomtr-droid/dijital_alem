@@ -269,22 +269,28 @@
         </div>
       </section>
 
-      <!-- Yeme & İçme -->
+      <!-- Yeme & İçme — 2 tiles 177×82, 8px gap; gutters via .page -->
       <section class="section yeme-icme" aria-label="Yeme &amp; İçme">
-        <a class="yeme-icme-banner" href="#yeme-icme" id="yeme-icme">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="assets/yeme-icme/yeme-icme-1x.webp 1x, assets/yeme-icme/yeme-icme.webp 2x"
-            />
-            <img
-              src="assets/yeme-icme/yeme-icme.jpg"
-              alt="Yeme &amp; İçme"
-              width="361"
-              height="82"
-            />
-          </picture>
-        </a>
+        <div class="yeme-icme-row" id="yeme-icme">
+          <a class="yeme-icme-tile-card" href="#konaklama" aria-label="Konaklama">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/yeme-icme/konaklama-1x.webp 1x, assets/yeme-icme/konaklama.webp 2x"
+              />
+              <img class="yeme-icme-tile" src="assets/yeme-icme/konaklama.jpg" alt="Konaklama" width="177" height="82" />
+            </picture>
+          </a>
+          <a class="yeme-icme-tile-card" href="#yeme-icme-tile" aria-label="Yeme &amp; İçme">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/yeme-icme/yeme-icme-1x.webp 1x, assets/yeme-icme/yeme-icme.webp 2x"
+              />
+              <img class="yeme-icme-tile" src="assets/yeme-icme/yeme-icme.jpg" alt="Yeme &amp; İçme" width="177" height="82" />
+            </picture>
+          </a>
+        </div>
       </section>
 
       <!-- Keşfet -->

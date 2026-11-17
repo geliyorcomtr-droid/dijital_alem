@@ -215,7 +215,7 @@ img {
 .nearby-tile-card,
 .firsat-banner,
 .sehrimden-haberler-banner,
-.yeme-icme-banner,
+.yeme-icme-tile-card,
 .kesfet-tile-card,
 .ilanlar-tile-card,
 .acil-destek-tile-card,
@@ -511,27 +511,36 @@ img {
   border-radius: calc(var(--radius-md) - 3px);
 }
 
-/* Yeme & İçme — full-width 361×82; gutters via .page */
-.yeme-icme-banner {
-  display: block;
+/* Yeme & İçme — 2 equal tiles in 361px: (361 - 8) / 2 ≈ 176.5 ≈ 177; asset 177×82 */
+.yeme-icme-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
   width: 100%;
   max-width: var(--content);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
 }
 
-.yeme-icme-banner picture {
+.yeme-icme-tile-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.yeme-icme-tile-card picture {
   display: contents;
 }
 
-.yeme-icme-banner img {
+.yeme-icme-tile {
   width: 100%;
   height: auto;
-  aspect-ratio: 361 / 82;
+  aspect-ratio: 177 / 82;
+  max-width: none;
   object-fit: cover;
-  display: block;
   border-radius: calc(var(--radius-md) - 3px);
+  display: block;
 }
 
 /* Keşfet — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; height 130; gutters via .page */
