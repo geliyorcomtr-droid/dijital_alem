@@ -212,7 +212,6 @@ img {
 /* Image boxes — dominant-color frame + 2px gap before image */
 .banner-frame,
 .cat-card,
-.service-card,
 .nearby-tile-card,
 .firsat-banner,
 .sehrimden-haberler-banner,
@@ -272,7 +271,6 @@ img {
 }
 
 .banner-slide picture,
-.service-media picture,
 .brand picture {
   display: contents;
 }
@@ -426,18 +424,6 @@ img {
   object-fit: cover;
   border-radius: 11px;
   display: block;
-}
-
-/* Nearby services — full content width (3 equal cols); height ~12% smaller */
-.service-scroller {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-  width: 100%;
-  max-width: var(--content);
-  margin: 0;
-  padding: 0;
-  overflow: visible;
 }
 
 /* Event tiles — 4 equal in 361px: (361 - 3*8) / 4 = 84.25px ≈ 85; asset 85×110 */
@@ -664,113 +650,6 @@ img {
   border-radius: 11px;
   display: block;
 }
-
-.service-card {
-  min-width: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-  display: flex;
-  flex-direction: column;
-}
-
-.service-media {
-  position: relative;
-  height: 81px; /* was 92 — ~12% smaller */
-  background: #f3f6fb;
-  overflow: hidden;
-  border-radius: 10px 10px 0 0;
-}
-
-.service-card .promo {
-  border-radius: 0 0 10px 10px;
-}
-
-.service-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.media-tags {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  display: flex;
-  justify-content: space-between;
-  gap: 4px;
-}
-
-.tag {
-  font-size: 8px;
-  font-weight: 800;
-  border-radius: 999px;
-  padding: 2px 4px;
-  backdrop-filter: blur(8px);
-  white-space: nowrap;
-}
-
-.tag.dist {
-  background: rgba(255, 255, 255, 0.92);
-  color: var(--navy);
-}
-
-.tag.open {
-  background: rgba(220, 252, 231, 0.95);
-  color: var(--green);
-}
-
-.service-body {
-  padding: 7px 7px 5px;
-}
-
-.service-body h3 {
-  margin: 0 0 2px;
-  font-family: var(--font-display);
-  font-size: 10px;
-  font-weight: 800;
-  color: var(--navy);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.rating {
-  margin: 0;
-  font-size: 10px;
-  font-weight: 800;
-  color: var(--navy);
-}
-
-.rating .star {
-  color: #f59e0b;
-}
-
-.rating em {
-  font-style: normal;
-  color: var(--muted);
-  font-weight: 700;
-}
-
-.promo {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 26px; /* was 30 — ~13% smaller */
-  padding: 0 4px;
-  font-size: 9px;
-  font-weight: 800;
-  color: #fff;
-  text-align: center;
-  line-height: 1.15;
-}
-
-.promo-blue { background: linear-gradient(90deg, #2563eb, #3b82f6); }
-.promo-green { background: linear-gradient(90deg, #16a34a, #22c55e); }
-.promo-sky { background: linear-gradient(90deg, #0284c7, #38bdf8); }
 
 /* Stats */
 .stats {
