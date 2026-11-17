@@ -561,8 +561,7 @@ img {
   width: 100%;
   height: 100%;
   max-width: none;
-  object-fit: cover; /* fill 115×130; no letterbox */
-  object-position: center bottom; /* keep title/CTA; crop empty top */
+  object-fit: contain; /* full artwork in tile; no crop */
   border-radius: 11px;
   display: block;
 }
