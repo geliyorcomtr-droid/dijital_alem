@@ -534,33 +534,36 @@ img {
   border-radius: calc(var(--radius-md) - 3px);
 }
 
-/* Keşfet — 3 equal tiles in 361px: (361 - 2*8) / 3 = 115px; gutters via .page */
+/* Keşfet — 3 tiles exactly 132×120; gap 8px (navy frame via shared rule) */
 .kesfet-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  justify-content: space-between;
   gap: 8px;
-  width: 100%;
-  max-width: var(--content);
+  width: calc(3 * 132px + 2 * 8px); /* 412 */
+  max-width: none;
+  margin-left: calc((100% - (3 * 132px + 2 * 8px)) / 2);
 }
 
 .kesfet-tile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  text-align: center;
-  min-width: 0;
-  width: 100%;
+  display: grid;
+  flex: 0 0 132px;
+  width: 132px;
+  height: 120px;
+  min-width: 132px;
   border-radius: 14px;
   box-shadow: var(--shadow-card);
   overflow: hidden;
 }
 
+.kesfet-tile-card picture {
+  display: contents;
+}
+
 .kesfet-tile {
   width: 100%;
-  height: auto;
-  aspect-ratio: 115 / 140;
+  height: 100%;
   max-width: none;
-  object-fit: cover;
+  object-fit: cover; /* same fill as .yeme-icme-banner */
   border-radius: 11px;
   display: block;
 }
